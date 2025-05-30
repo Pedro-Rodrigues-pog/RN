@@ -1,6 +1,10 @@
-import {Slot} from "expo-router";
-import React from "react"; // Configurações para acessar o React Native
+import {Slot, Stack} from "expo-router";
+import React from "react";
 
 export default function layout(){
-    return <Slot/>; //Criação de uma variavel 
+    return (
+        <Stack>
+            <Stack.Screen name = "(tabs)" options = {{headerShown:false}}/>
+        </Stack>
+    );
  }

@@ -18,7 +18,7 @@ fetch(`${host}/characters`, {
         i++;
     }*/
    
-     
+     console.log(data.characters);
    
    let j = 0;
    for(j; j < characters[j].length; j++){

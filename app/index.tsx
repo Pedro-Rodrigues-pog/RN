@@ -7,9 +7,10 @@ import { useRouter } from "expo-router";
 
 export default function HomeScreen(){
 
+    const router = useRouter();
+
     const[count, setCount] = useState(1);
     const[name, setName] = useState("Brunão");
-    const router = useRouter();
 return (
         //View tem a mesma funcionalidade de uma DIV
         <View style={{backgroundColor: 'red'}}>
@@ -32,6 +33,8 @@ return (
            <Button title = "Stack navigation" onPress = {() => router.push('/navigation/stack')}/>
            <Button title = "Tabs navigation" onPress = {() => router.push('/navigation/tabs')}/>
            <Button title = "Drawer navigation" onPress = {() => router.push('/navigation/drawer')}/>
+
+            <Button title = "Personagens" onPress={() => router.push('/personagens/')}/>
            
         </View>
         );
