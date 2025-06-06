@@ -4,7 +4,7 @@ import React,{ useState }  from "react";
 import { Button, Text,View, } from "react-native";
 import Form from "@/components/Form";
 import { useRouter } from "expo-router";
-
+import Index from "./";
 export default function HomeScreen(){
 
     const router = useRouter();
@@ -13,7 +13,7 @@ export default function HomeScreen(){
     const[name, setName] = useState("Brunão");
 return (
         //View tem a mesma funcionalidade de uma DIV
-        <View style={{backgroundColor: 'red'}}>
+        <View style={{backgroundColor: 'red'}}> 
             
            { /*<Text>{count}</Text>
             <Button 
@@ -33,10 +33,9 @@ return (
            <Button title = "Stack navigation" onPress = {() => router.push('/navigation/stack')}/>
            <Button title = "Tabs navigation" onPress = {() => router.push('/navigation/tabs')}/>
            <Button title = "Drawer navigation" onPress = {() => router.push('/navigation/drawer')}/>
-
+             <Button title = "Soma" onPress = {() => router.push('/Soma')}/>
             <Button title = "Personagens" onPress={() => router.push('/personagens/')}/>
            
         </View>
         );
 }
-
